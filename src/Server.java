@@ -7,6 +7,7 @@ public class Server {
     private final int port = 1234;
 
     public Server() {
+        Game game = new Game();
         try (ServerSocket ss = new ServerSocket(port)) {
             Socket socket;
             while ((socket = ss.accept()) != null) {

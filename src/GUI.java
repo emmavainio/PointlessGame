@@ -23,7 +23,7 @@ public class GUI extends JFrame {
         System.setProperty("sun.java2d.opengl", "true"); // Enable video acceleration.
 
         try {
-            orchard = ImageIO.read(getClass().getResourceAsStream("images/orchard.jpg"));
+            orchard = ImageIO.read(getClass().getResourceAsStream("images/orchard.png"));
         } catch(IOException e) {
             e.printStackTrace();
         }
